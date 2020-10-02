@@ -1,0 +1,41 @@
+<Entity 
+  name="DEBUG_NAME:player"
+  tags="mortal,human,hittable,peasant,prey,player_unit,teleportable" >
+  
+  <Base file="data/entities/player_base.xml" include_children="1"> 
+  
+	<CharacterDataComponent 
+    climb_over_y="20" 
+    fly_time_max="0.1"
+    flying_in_air_wait_frames="55"
+    flying_recharge_removal_frames="55" >
+  </CharacterDataComponent>
+  
+  <CharacterPlatformingComponent 
+    jump_velocity_y="-140" 
+    jump_velocity_x="75"
+    fly_speed_max_up="140"
+    fly_speed_max_down="0"
+    fly_speed_mult="50"
+    fly_speed_change_spd="100"
+    run_velocity="200"
+    fly_velocity_x="300" 
+	accel_x_air="0.1"
+    velocity_min_x="-75" 
+    velocity_max_x="75" 
+	swim_idle_buoyancy_coeff="2"	>
+  </CharacterPlatformingComponent>
+  
+  </Base>
+
+  <Entity name="inventory_quick">
+      <Entity><Base file="data/entities/items/starting_wand.xml" /></Entity> 
+      <Entity><Base file="data/entities/items/starting_bomb_wand.xml" /></Entity>
+      <Entity><Base file="data/entities/items/pickup/potion_water.xml" /></Entity>
+  </Entity>
+  <Entity name="inventory_full"/>
+  
+  
+
+</Entity>
+
