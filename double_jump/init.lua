@@ -139,7 +139,7 @@ function OnPlayerSpawned( player_entity ) -- This runs when player entity has be
 		{
 		  remove_after_executed="0",
 		  execute_times="-1",
-		  script_source_file="mods/mwp_player_frontline_witch/files/scripts/jump_wait.lua"
+		  script_source_file="mods/double_jump/files/scripts/jump_wait.lua"
 		} )
 	end
 end
